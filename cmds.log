@@ -1,0 +1,552 @@
+    1  passwd
+    2  ping 172.20.25.9
+    3  wget www.github.com
+    4  exit
+    5  wget www.github.com
+    6  dir
+    7  rmdir index.html
+    8  rem index.html
+    9  cd ~/Desktop
+   10  del index.html
+   11  rm index.html
+   12  rm index.html.1
+   13  exit
+   14  dir
+   15  mkdir myProjects
+   16  dir
+   17  rmdir myProjects
+   18  exit
+   19  wget www.github.com
+   20  git ibit
+   21  git init
+   22  dir
+   23  rm -rf .git
+   24  dir
+   25  rm index.html
+   26  dir
+   27  dnf repolist
+   28  exit
+   29  wget www.github.com
+   30  dir
+   31  mkdir cs131
+   32  cd cs131
+   33  mkdir Worksheet1
+   34  dir
+   35  git status
+   36  gh auth login
+   37  rmdir Worksheet1
+   38  ls
+   39  dir
+   40  cd..
+   41  cd ..
+   42  ls
+   43  rmdir cs131
+   44  rm index.html
+   45  ls
+   46  exit
+   47  wget www.github.com
+   48  mkdir Worksheet1
+   49  history > cmds.log
+   50  git commit -m "initial commit"
+   51  ls
+   52  rmdir Worksheet1
+   53  rm index.html 
+   54  rm cmds.log
+   55  ls
+   56  dir
+   57  exit
+   58  wget www.github.com
+   59  mkdir Worksheet1
+   60  git remote add origin https://github.com/gabrield03/cs131.git
+   61  ls
+   62  cd Worksheet1
+   63  git remote add origin https://github.com/gabrield03/cs131.git
+   64  cat index1.html
+   65  cd ..
+   66  cat index1.html
+   67  cat index.html
+   68  rm index.html 
+   69  rmdir Worksheet1/
+   70  ls
+   71  exit
+   72  wget www.github.com
+   73  mkdir Worksheet1
+   74  cd Worksheet1
+   75  history > cmds.log
+   76  git status
+   77  ls
+   78  fatal: not a git repository (or any parent up to mount point /mnt)
+   79  Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+   80  rm cmds.log 
+   81  cd ..
+   82  rmdir Worksheet1/
+   83  rm index.html 
+   84  ls
+   85  exit
+   86  wget www.github.com
+   87  mkdir Worksheet1
+   88  cd Worksheet1
+   89  git init
+   90  history > cmds.log
+   91  git commit -m "initial commit"
+   92  git status
+   93  git add
+   94  git status
+   95  git add cmds.log
+   96  git status
+   97  git commit -m "initial commit"
+   98  git config -l
+   99  gitconfig --global user.email "gabriellarot3@gmail.com"
+  100  git config --global user.email "gabriellarot3@gmail.com"
+  101  git config --global user.name "gabrield03"
+  102  git config -l
+  103  git status
+  104  git commit -m "initial commit"
+  105  git remote add origin https://github.com/gabrield03/cs131.git
+  106  git push -u origin main
+  107  git push -u origin master
+  108  git clone https:/github.com/gabrield03/cs131.git
+  109  git clone https://github.com/gabrield03/cs131.git
+  110  ls
+  111  rmdir cs131
+  112  cd cs131
+  113  ls
+  114  rm cmds.log
+  115  cd ..
+  116  rmdir cs131
+  117  rmdir ?
+  118  rmdir -help
+  119  rmdir --help
+  120  rmdir -p cs 131
+  121  rmdir -p cs131
+  122  ls
+  123  cd cs131
+  124  ls
+  125  cd ..
+  126  rmdir -r cs131
+  127  rm -r cs131
+  128  ls
+  129  exit
+  130  dir
+  131  ls
+  132  exit
+  133  pwd
+  134  ls
+  135  cd exampleDir
+  136  ls
+  137  touch a.txt
+  138  touch b.txt
+  139  touch c.txt
+  140  ls- l
+  141  ls -l
+  142  ls -lt
+  143  ls -ltr
+  144  time --help
+  145  man time
+  146  cd ..
+  147  ls
+  148  cd gabrielf23
+  149  pwd
+  150  ls
+  151  mkdir exampleDir
+  152  l
+  153  ls
+  154  cd exmapleDir
+  155  cd exampleDir
+  156  ls
+  157  touch exampleFile.txt
+  158  ls
+  159  ls --help
+  160  ls -a exampleFile.txt
+  161  man
+  162  man ls
+  163  man ls -less
+  164  man ls
+  165  ls
+  166  rmdir exampleDir/
+  167  rmdir -f exampleDir/
+  168  rmdir -fr exampleDir/
+  169  rmdir --help
+  170  man ls
+  171  ls
+  172  ls index.html
+  173  cd index.html
+  174  ls
+  175  ls -l
+  176  ls -more
+  177  ls --more
+  178  ls --less
+  179  exit
+  180  ls
+  181  =&0
+  182  =$0
+  183  =$$
+  184  python3
+  185  echo $SHELL
+  186  ping 172.20.25.9
+  187  man netstat
+  188  cd exampleDir/
+  189  ls
+  190  nano exampleFile.txt
+  191  cd exampleDir/
+  192  ls
+  193  vi a.txt
+  194  cat a.txt
+  195  ls
+  196  rmdir exampleDir/a.txt
+  197  cd exampleDir
+  198  rm a.txt
+  199  rm b.txt
+  200  rm c.txt
+  201  rm exampleFile.txt 
+  202  ls
+  203  cd ..
+  204  rmdir exampleDir/
+  205  ls
+  206  cd Worksheet1/
+  207  ls
+  208  cat cmds.log
+  209  exit
+  210  ls
+  211  vi sample.txt
+  212  vim -r sample.txt
+  213  vi sample.txt
+  214  vim -r sample.txt
+  215  ls
+  216  cd Worksheet1/
+  217  pwd
+  218  ls
+  219  cat cmds.log 
+  220  head cmds.log
+  221  head -15 cmds.log 
+  222  tail cmds.log 
+  223  ls
+  224  cd ..
+  225  ls
+  226  touch sample.txt
+  227  ls
+  228  nano sample.txt 
+  229  touch sample.txt 
+  230  ls
+  231  cat sample.txt 
+  232  vi sample.txt 
+  233  vi same
+  234  cat same
+  235  ls
+  236  cat sample.txt 
+  237  vi sample.txt 
+  238  cat sample.txt 
+  239  vi sample.txt 
+  240  ls
+  241  pwd
+  242  ls
+  243  mkdir SampleRepoForCS131
+  244  touch sampleText.txt
+  245  ls
+  246  rm sampleText.txt 
+  247  cd SampleRepoForCS131/
+  248  touch sampleText.txt
+  249  pwd
+  250  git init
+  251  git add sampleText.txt 
+  252  git status
+  253  cd ~/.ssh && ssh-keygen
+  254  mkdir test.txt
+  255  cd test.txt/
+  256  ls
+  257  cd ..
+  258  ls
+  259  rmdir test.txt/
+  260  ls
+  261  pwd
+  262  git status
+  263  cd SampleRepoForCS131/
+  264  git status
+  265  man less
+  266  ls
+  267  rmdir SampleRepoForCS131/
+  268  rm -r SampleRepoForCS131/
+  269  cd SampleRepoForCS131/
+  270  ls
+  271  cd ..
+  272  rmdir SampleRepoForCS131/
+  273  rm -r SampleRepoForCS131/
+  274  ls
+  275  rm sample.txt 
+  276  ls
+  277  cd Worksheet1/
+  278  ls
+  279  cat cmds.log 
+  280  exit
+  281  ls
+  282  cat index.html 
+  283  clear
+  284  ls
+  285  mkdir SampleProject
+  286  ls -ltr
+  287  cd SampleProject/
+  288  touch sampleFile.txt
+  289  git init
+  290  git add .
+  291  git status
+  292  cd ~/.ssh && ssh-keygen
+  293  mkdir ~/.ssh
+  294  cd ~/.ssh && ssh-keygen
+  295  exit
+  296  ls
+  297  cd SampleProject/
+  298  dir
+  299  pwd
+  300  cd ~/.ssh
+  301  ls
+  302  cat id_rsa.pub
+  303  ssh-keygen
+  304  exit
+  305  ls
+  306  cd ~./ssh
+  307  cd ~/.ssh
+  308  ls
+  309  cat 'cat id_rsa.pub'
+  310  cat 'cat id_rsa.pub.pub'
+  311  exit
+  312  ls
+  313  cd SampleProject/
+  314  eix
+  315  exit
+  316  cd SampleProject/
+  317  git remote add origin https://github.com/gabrield03/cs131test.git
+  318  git commit -m "initial commit"
+  319  git push --set-upstream origin master
+  320  git status
+  321  cd ..
+  322  git clone github.com/gabrield03/cs131test.git
+  323  exit
+  324  ls
+  325  cd SampleProject
+  326  ls
+  327  cd..
+  328  cd ..
+  329  rm -r SampleProject/
+  330  ls
+  331  wget www.github.com
+  332  ls
+  333  rm index.html.l
+  334  rm index.html.1
+  335  ls
+  336  clear
+  337  mkdir Worksheet1
+  338  ls
+  339  rm -r Worksheet1/
+  340  ls
+  341  clear
+  342  mkdir Worksheet1
+  343  ls
+  344  ls -ltr
+  345  cd Worksheet1/
+  346  history > cmds.log
+  347  ls
+  348  cd ..
+  349  cd Worksheet1/
+  350  git init
+  351  git status
+  352  eixt
+  353  exit
+  354  ls -ltr
+  355  cd Worksheet1/
+  356  ls
+  357  git status
+  358  git add .
+  359  git status
+  360  git commit -m "Initial commit"
+  361  git status
+  362  git remote add origin git@github.com:gabrield03/cs131.git
+  363  git push origin main -force
+  364  yes
+  365  ls
+  366  git push origin main --force
+  367  exit
+  368  ls
+  369  rm -r Worksheet1/
+  370  ls
+  371  clear
+  372  mkdir Worksheet1
+  373  ls -ltr
+  374  cd Worksheet1/
+  375  history > cmds.log
+  376  exit
+  377  cd Worksheet1/
+  378  git init
+  379  git add .
+  380  git status
+  381  cd ~/.ssh && ssh-keygen
+  382  ls
+  383  rm 'cat id_rsa.pub'
+  384  rm 'cat id_rsa.pub.pub' 
+  385  ls
+  386  cd ~/.ssh && ssh-keygen
+  387  ls
+  388  cat id_rsa.pub
+  389  exit
+  390  cd ~/.ssh
+  391  ls
+  392  cat id_rsa.pub
+  393  cat id_rsa.pub.pub
+  394  exit
+  395  cd Worksheet1/
+  396  cd ..
+  397  git remote add origin git@github.com:gabrield03/cs131/Worksheet1.git
+  398  cd Worksheet1/
+  399  git remote add origin git@github.com:gabrield03/cs131/Worksheet1.git
+  400  git commit -m "initial commit"
+  401  git push --set-upstream origin master
+  402  ls
+  403  cat cmds.log
+  404  git push origin master
+  405  git status
+  406  exit
+  407  ls
+  408  rm - Worksheet1
+  409  rm -r Worksheet1
+  410  ls
+  411  mkdir Worksheet1/
+  412  ls -ltr
+  413  cd Worksheet1/
+  414  history > cmds.log
+  415  ls
+  416  rm cmds.log 
+  417  git init
+  418  history > cmds.log
+  419  git add Worksheet1/
+  420  git add Worksheet1
+  421  cd ..
+  422  git add Worksheet1
+  423  ls
+  424  git add Worksheet1/
+  425  git add Worksheet1/cmds.log
+  426  git status
+  427  cd Worksheet1/
+  428  ls
+  429  git add .
+  430  git status
+  431  git rm --cached cmds.log 
+  432  git status
+  433  git add cmds.log
+  434  git status
+  435  git remote add origin git@github.com:gabrield03/cs131.git
+  436  git commit -m "initial commit"
+  437  git push --set-upstream origin master
+  438  git branch -M main
+  439  git push -u origin main
+  440  exit
+  441  ls
+  442  rm -r Worksheet1/
+  443  ls
+  444  cd ~/.ssh
+  445  ls
+  446  rm id_rsa.pub id_rsa.pub.pub known_hosts 
+  447  ls
+  448  cd ~/
+  449  ls
+  450  mkdir Worksheet1/
+  451  ls -ltr
+  452  cd Worksheet1/
+  453  history > cmds.log
+  454  git init
+  455  git add .
+  456  git status
+  457  git config -l
+  458  cd ~/.ssh && ssh-keygen
+  459  cat id_rsa.pub | clip
+  460  cat id_rsa.pub | pbcopy
+  461  ls
+  462  cat id_rsa.pub
+  463  exit
+  464  clear
+  465  pwd
+  466  ls
+  467  cd Worksheet1/
+  468  git status
+  469  cd ~/.ssh
+  470  ls
+  471  cd ~/
+  472  cd Worksheet1/
+  473  git push --set-upstream origin master
+  474  cd ~/.ssh
+  475  clip < ~/.ssh/id_rsa.pub
+  476  cat id_rsa.pub | pbcopy
+  477  cat id_rsa.pub | clip
+  478  cat id_rsa.pub | xclip
+  479  pbcopy < ~./ssh/id_rsa.pub
+  480  pbcopy < ~/.ssh/id_rsa.pub
+  481  clip < ~/.ssh/id_rsa.pub
+  482  cd ~/.ssh
+  483  ls
+  484  cat ~/.ssh/id_rsa.pub | pbcopy
+  485  cat ~/.ssh/id_rsa.pub | xclip
+  486  cat id_rsa.pub
+  487  vi id_rsa.pub
+  488  vi id_rsa.pub.pub
+  489  git config -l
+  490  ls
+  491  rm id_rsa.pub id_rsa.pub.pub known_hosts 
+  492  ls
+  493  cd ~/
+  494  ls
+  495  rm Worksheet1/
+  496  rm -r Worksheet1/
+  497  ls
+  498  clear
+  499  mkdir Worksheet1
+  500  ls -ltr
+  501  cd Worksheet1/
+  502  history > cmds.log
+  503  git init
+  504  git add .
+  505  git status
+  506  git config - l
+  507  git config -l
+  508  cd ~/.ssh && ssh-keygen
+  509  ls
+  510  cat id_rsa.pub
+  511  git remote add origin git@github.com:gabrield03/cs131/Worksheet1.git
+  512  git remote add origin git@github.com:gabrield03/cs131.git
+  513  git status
+  514  cd ~/
+  515  ls
+  516  cd Worksheet1/
+  517  ls
+  518  git status
+  519  git remote add origin git@github.com:gabrield03/cs131/Worksheet1.git
+  520  git commit -m "initial commit"
+  521  git push --set-upstream origin master
+  522  git remote add origin git@github.com:gabrield03/cs131/.git
+  523  git status
+  524  git remote rm origin git@github.com:gabrield03/cs131/.git
+  525  git remote remove git@github.com:gabrield03/cs131/Worksheet1.git
+  526  git remote remove origin git@github.com:gabrield03/cs131/Worksheet1.git
+  527  git remote remove git@github.com:gabrield03/cs131/Worksheet1/.git
+  528  git remote remove git@github.com:gabrield03/cs131/Worksheet1
+  529  git push -u origin master
+  530  git add cmds.log 
+  531  git status
+  532  cd ..
+  533  rm -r Worksheet1/
+  534  ls
+  535  mkdir Worksheet1
+  536  ls -ltr
+  537  cd Worksheet1/
+  538  history > cmds.log
+  539  git init
+  540  git add .
+  541  git status
+  542  git remote add origin git@github.com:gabrield03/cs131.git
+  543  git commit -m "initial commit"
+  544  git push -u origin main
+  545  git push -u origin master
+  546  cd ..
+  547  rm -r Worksheet1/
+  548  ls
+  549  mkdir Worksheet1
+  550  ls -ltr
+  551  cd Worksheet1/
+  552  history > cmds.log
