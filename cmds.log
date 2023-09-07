@@ -1,0 +1,14 @@
+    1  ls -lt
+    2  mkdir Worksheet2
+    3  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+    4  ls -lt
+    5  grep "United States" Global\ YouTube\ Statistics.csv 
+    6  clear
+    7  grep "Music" Global\ YouTube\ Statistics.csv 
+    8  clear
+    9  grep "Music" Global\ YouTube\ Statistics.csv | wc -lw
+   10  grep "Music" Global\ YouTube\ Statistics.csv | wc -lw > Worksheet2/counts.txt
+   11  grep "Music" Global\ YouTube\ Statistics.csv | tr ',' ' ' | wc -w >> Worksheet2/counts.txt 
+   12  cd Worksheet2
+   13  vi counts.txt 
+   14  history > cmds.log

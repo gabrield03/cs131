@@ -1,0 +1,8 @@
+Data from "Music" category pulled from the YouTube file
+Line count: 238
+Word count: 830
+
+Note: Since it is a csv file, words are separated by a ',' on each line.
+I included the tr command to account for the commas and to get a true word count.
+
+True word count: 7228
