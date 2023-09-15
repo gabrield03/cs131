@@ -1,0 +1,42 @@
+1) Make a directory Assignment1 and change it.
+    1  mkdir Assignment1/
+    2  mv Assignment1/ tmp/
+    3  mv tmp/ Assignment1/
+
+2) Echo current shell using the global variable and paste the output of the command.
+    4  echo $SHELL
+    5  echo $SHELL > Assignment1/Assignment1.txt
+
+3) Echo your home directory path and paste the output of the command.
+    6  echo $HOME
+    7  echo $HOME >> Assignment1/Assignment1.txt
+
+4) What is your UID? What groups do you belong to?
+    8  id -u
+    9  id -u >> Assignment1/Assignment1.txt
+   10  groups
+   11  groups >> Assignment1/Assignment1.txt
+
+5) Create a new directory, "myDir" in the Assignment1 folder. Remove "write" permissions for yourself.
+   12  mkdir Assignment1/myDir
+   13  cd Assignment1/
+   14  chmod -w myDir
+
+6) Create a new directory "myDir2" and "myDir3"
+   15  mkdir myDir2/ myDir3/
+
+7) Create a file, myFile.txt inside myDir2 and move it from myDir2 to myDir3
+   16  touch myDir2/myFile.txt
+   17  mv myDir2/myFile.txt myDir3/myFile.txt
+
+8) Find the total amount of RAM/Memory in the IVM VM using the 'free' command. Display the amount of memory in mebibytes
+   18  free -m
+
+9) Identify the OS version.
+   19  cat /etc/os-release
+
+10) What is the permission (given to all users) for the file containing the OS version information?
+   20  cat /usr/lib
+
+   21  exit
+   22  history < cmds.log

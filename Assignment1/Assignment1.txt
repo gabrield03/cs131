@@ -1,0 +1,67 @@
+*Note: The assignment has numbering mistakes (on Canvas). I numbered the questions normally*
+
+1) Make a directory Assignment1 under your home directory and change it.
+Commands:
+mkdir Assignment1/
+mv Assignment1/ tmp/
+mv tmp/ Assignment1/
+
+2) Echo your current Shell using the global variable and paste the output of the command.
+Commands:
+echo $SHELL
+echo $SHELL > Assignment1/Assignment1.txt  <-- paste output of command to Assignment1.txt
+Output:
+/bin/bash
+
+3) Echo your home directory path and paste the output of the command.
+Commands:
+echo $HOME
+echo $HOME >> Assignment1/Assignment1.txt  <-- paste output of command to Assignment1.txt
+Output:
+/mnt/scratch/FA23_CS131_Ashish/gabrielf23
+
+4) What is your UID> What group(s) do you belong?
+Commands:
+id -u
+groups
+Output:
+1124 <-- uid
+gabrielf23 S77 <-- groups
+
+5) Create a new directory "myDir" in the Assignment1 folder. Remove "write" permissions for yourself.
+Can you cd into myDir? Can you "ls" it? Can you "ls -l" it? Can you create files under it?
+Commands:
+mkdir myDir
+cd Assignment1/myDir
+chmod -w myDir
+Answers:
+Yes, you can cd into it. Yes, you "ls" it. Yes, you can "ls -l" it. No, you cannot create files under it.
+
+6) Create a new directory "myDir2" and create a new directory "myDir3".
+Command:
+mkdir myDir2/ myDir3/
+
+7) Create a file, "myFile.txt" in myDir2 and move the file from myDir2 to myDir3 using the mv command.
+Commands:
+touch myDir2/myFile.txt
+mv myDir2/myFile.txt myDir3/myFile.txt
+
+8) Find the total amount of RAM/Memory in the IBM VM using the "free" command. Display the amount of memory in mebibytes
+Command:
+free -m
+Output: (only listing the total RAM/Memory shown - other stuff omitted)
+Total - 71367 
+
+9) Identify the OS version. Which file under /etc/ contains this information?
+Commands:
+cat /etc/os-release
+Output: (extra lines omitted)
+VERSION="8.6 (Ootpa)"
+Answer: /etc/os-release contains this information
+
+10) What is the permission (given to all users) for the file containing the OS information?
+Commands:
+ls -l /usr/lib
+Output: (extra lines omitted)
+-rw-r--r--.  1 root root   592 Apr  6  2022 os-release
+Answer: The permission given to all users for the file containing the OS information is read (no write or execute permission given).
