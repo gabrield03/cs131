@@ -1,0 +1,11 @@
+    1  pwd
+    2  grep "United States" Global\ YouTube\ Statistics.csv | sort -t ',' -k16,16nr | head -n 1 > ~/Worksheet3/ws3.txt
+    3  grep "United Kingdom" Global\ YouTube\ Statistics.csv | sort -t ',' -k16,16nr | head -n 1 >> ~/Worksheet3/ws3.txt
+    4  grep "India" Global\ YouTube\ Statistics.csv | sort -t ',' -k16,16nr | head -n 1 >> ~/Worksheet3/ws3.txt
+    5  vi ~/Worksheet3/ws3.txt
+    6  grep "Sports" Global\ YouTube\ Statistics.csv | sort -t ',' -k3,3nr | head -n 1 >> ~/Worksheet3/ws3.txt
+    7  grep "Education" Global\ YouTube\ Statistics.csv | sort -t ',' -k3,3nr | head -n 1 >> ~/Worksheet3/ws3.txt
+    8  grep "Entertainment" Global\ YouTube\ Statistics.csv  | sort -t ',' -k3,3nr | head -n 1 >> ~/Worksheet3/ws3.txt
+    9  vi ~/Worksheet3/ws3.txt
+   10  cat ~/Worksheet3/ws3.txt 
+   11  history > ~/Worksheet3/cmds.log
