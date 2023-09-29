@@ -1,0 +1,5 @@
+Mean (average) number of subscribers in the Philippines:
+20008333.33
+
+Mean (average) number of subscribers in France:
+16780000.00

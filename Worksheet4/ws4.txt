@@ -1,0 +1,75 @@
+Script started on 2023-09-28 19:48:21-04:00
+bash-4.4$ vi .bashrc
+bash-4.4$ source .bashrc
+bash-4.4$ l
+total 264
+-rw-rw-r-- 1 gabrielf23 gabrielf23 235689 Aug 24 21:29 index.html
+drwxrwxr-x 3 gabrielf23 gabrielf23   4096 Sep  4 17:30 Worksheet1
+drwxrwxr-x 5 gabrielf23 gabrielf23   4096 Sep  7 18:38 Worksheet2
+drwxrwxr-x 2 gabrielf23 gabrielf23   4096 Sep 13 20:07 downloadedFiles
+drwxrwxr-x 2 gabrielf23 gabrielf23   4096 Sep 15 01:34 Worksheet3
+drwxrwxr-x 6 gabrielf23 gabrielf23   4096 Sep 15 05:44 Assignment1
+drwxrwxr-x 3 gabrielf23 gabrielf23   4096 Sep 20 17:57 Worksheet0
+drwxrwxr-x 3 gabrielf23 gabrielf23   4096 Sep 20 19:29 ClonedRepos
+drwxrwxr-x 4 gabrielf23 gabrielf23   4096 Sep 20 20:08 practice
+-rw-rw-r-- 1 gabrielf23 gabrielf23      0 Sep 28 19:48 ws4.txt
+bash-4.4$ 
+bash-4.4$ w
+     11      92     672
+bash-4.4$ mkdir Worksheet[Kt4
+bash-4.4$ cd Worksheet4
+bash-4.4$ mkdir Subscribers
+bash-4.4$ grep -i "philippines" ~/downloadedFiles/Global\ YouTube\ Statistics.csv | cut -d ',' -f3 >> ~/Worksheet4/Subscribers/Philippines.txt
+bash-4.4$ grep -i "france" ~/downloadedFiles/Global\ YouTube\ Statistics.csv | cut -d ',' -f3 >> ~/Worksheet4/Subscribers/France.txt
+bash-4.4$ cd Subscribers/
+bash-4.4$ ls -lt
+total 8
+-rw-rw-r-- 1 gabrielf23 gabrielf23  45 Sep 28 19:51 France.txt
+-rw-rw-r-- 1 gabrielf23 gabrielf23 108 Sep 28 19:51 Philippines.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cat France.txt 
+22300000
+18100000
+16100000
+14400000
+13000000
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cat Philippines.txt 
+44200000
+31900000
+26500000
+21200000
+16600000
+15200000
+15100000
+15100000
+14200000
+13600000
+13400000
+13100000
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ total=$(awk '{ total += $1 } END { print total }' Philippines.txt)
+bash-4.4$ count=$(wc -l < Philippines.txt)
+bash-4.4$ echo "scale=2; $total / $count" | bc -l >> ~/Worksheet4/ws4_means.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ total=$(awk '{ total += $1 } END { print total }' France.txt)
+bash-4.4$ count=$(wc -l < France.txt)
+bash-4.4$ echo "scale=2; $total / $count" | bc -l >> ~/Worksheet4/ws4_means.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cd ..
+bash-4.4$ vi ws4_means.txt 
+bash-4.4$ cat ws4_means.txt 
+Mean (average) number of subscribers in the Philippines:
+20008333.33
+
+Mean (average) number of subscribers in France:
+16780000.00
+bash-4.4$ exit
+exit
+
+Script done on 2023-09-28 19:56:58-04:00
