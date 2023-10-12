@@ -1,7 +1,7 @@
 1. Execute the command find /etc -type f > one.txt 2> two.txt
    a. The command searches for all files within the /etc directory and subdirectories. It outputs the list of files to one.txt.
       The 2> part of the command redirects any standard error output that occurs due to the find command to the file two.txt.
-   b. The one.txt file has a list of files from the /etc directory and subdirectories. They are config files.
+   b. The one.txt file has a list of files from the /etc directory and subdirectories.
       two.txt contains a list of files that were the standard error output from the find command. They were files that I did not have
       permission to access. Additionally, on each line, it shows the command that generated the error output (find).
 
