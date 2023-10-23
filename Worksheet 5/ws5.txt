@@ -1,5 +1,6 @@
-Number of Entries | Respective Categories
-   73 | Music.txt
-   68 | Entertainment.txt
-   26 | Gaming.txt
-   22 | Comedy.txt
+The number of entries is on the left. The category is on the right
+   73 Music.txt
+   68 Entertainment.txt
+   26 Gaming.txt
+   22 Comedy.txt
+  189 total

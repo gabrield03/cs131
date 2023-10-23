@@ -1,14 +1,19 @@
     1  ls -lt
-    2  git clone git@github.com:gabrield03/cs131.git
-    3  clear
-    4  mkdir "Worksheet 5"
-    5  mkdir "Worksheet 5/United States/
-    6  awk -F ',' -v dir="Worksheet 5/United States/" '$8 == "United States" { category = $5; file = dir category ".txt"; if (category != "" && !created[file]) { system("[ -d \"" dir "\" ] || mkdir -p \"" dir "\""); system("touch " file); created[file] = 1; } if (category != "") print >> file; }' ~/downloadedFiles/Global\ YouTube\ Statistics.csv
-    7  cd Worksheet\ 5/United\ States/
-    8  ls -lt
-    9  rm ~/Worksheet
-   10  wc -l Music.txt Entertainment.txt Gaming.txt Comedy.txt > ~/Worksheet\ 5/ws5.txt
-   11  cd ..
-   12  ls -lt
-   13  vi ws5.txt
-   14  history > cmds.log
+    2  mkdir "Worksheet 5"
+    3  mkdir "Worksheet 5/United States"
+
+Create the script to put the entries into their respective categories
+    4  vi categorize-ytdata
+
+Execute the script
+    5  awk -f categorize-ytdata downloadedFiles/Global\ YouTube\ Statistics.csv 
+    6  ls -lt "Worksheet 5/United States/"
+    7  cd "Worksheet 5/United States"/
+
+Get the word counts for the required categories
+    8  wc -l Music.txt Entertainment.txt Gaming.txt Comedy.txt > ws5.txt
+    9  mv ws5.txt ~/Worksheet\ 5/ws5.txt
+   10  cd ..
+   11  ls -lt
+   12  vi ws5.txt 
+   13  history > cmds.log
