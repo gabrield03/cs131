@@ -3,7 +3,7 @@
     3  clear
     4  mkdir "Worksheet 5"
     5  mkdir "Worksheet 5/United States/
-    6  awk -F ',' -v outdir="Worksheet 5/United States/" '$8 == "United States" { category = $5; gsub(/[^a-zA-Z0-9 &]/, "", category); gsub(/^ *| *$/, "", category); file = outdir category ".txt"; if (category != "" && !created[file]) { system("[ -d \"" outdir "\" ] || mkdir -p \"" outdir "\""); system("touch " file); created[file] = 1; } if (category != "") print >> file; }' ~/downloadedFiles/Global\ YouTube\ Statistics.csv
+    6  awk -F ',' -v dir="Worksheet 5/United States/" '$8 == "United States" { category = $5; file = dir category ".txt"; if (category != "" && !created[file]) { system("[ -d \"" dir "\" ] || mkdir -p \"" dir "\""); system("touch " file); created[file] = 1; } if (category != "") print >> file; }' ~/downloadedFiles/Global\ YouTube\ Statistics.csv
     7  cd Worksheet\ 5/United\ States/
     8  ls -lt
     9  rm ~/Worksheet
