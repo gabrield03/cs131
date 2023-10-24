@@ -1,8 +1,0 @@
-BEGIN { FS="," }
-{
-	if ($8=="United States")
-	{
-		cat=$5
-		print >> "Worksheet 5/United States/" cat ".txt"
-	}
-}

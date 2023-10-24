@@ -1,19 +1,16 @@
-    1  ls -lt
-    2  mkdir "Worksheet 5"
-    3  mkdir "Worksheet 5/United States"
+    1  ls -t
+    2  mkdir Worksheet\ 5
+    3  mkdir Worksheet\ 5/United\ States
 
-Create the script to put the entries into their respective categories
-    4  vi categorize-ytdata
+Create and run the script to put the entries into their respective categories in files
+    4  vi sorted_categories.sh
+    5  chmod +x sorted_categories.sh
+    6  ./sorted_categories.sh
+    7  ls -lt Worksheet\ 5/United\ States
+    8  cd Worksheet\ 5/United\ States
 
-Execute the script
-    5  awk -f categorize-ytdata downloadedFiles/Global\ YouTube\ Statistics.csv 
-    6  ls -lt "Worksheet 5/United States/"
-    7  cd "Worksheet 5/United States"/
-
-Get the word counts for the required categories
-    8  wc -l Music.txt Entertainment.txt Gaming.txt Comedy.txt > ws5.txt
-    9  mv ws5.txt ~/Worksheet\ 5/ws5.txt
+Get the word counts for each file and redirect the output to ws5.txt
+    9  wc -l Music.txt Entertainment.txt Gaming.txt Comedy.txt >> ~/Worksheet\ 5/ws5.txt
    10  cd ..
-   11  ls -lt
-   12  vi ws5.txt 
-   13  history > cmds.log
+   11  vi ws5.txt
+   12  history > cmds.log

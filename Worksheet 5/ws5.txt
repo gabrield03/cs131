@@ -1,4 +1,4 @@
-The number of entries is on the left. The category is on the right
+The number of entries for each category is on the left of each .txt entry
    73 Music.txt
    68 Entertainment.txt
    26 Gaming.txt
