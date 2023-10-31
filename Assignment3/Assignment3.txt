@@ -1,0 +1,126 @@
+Task 1:
+Command(s) used to solve:
+0. last
+1. wc -l last.fake
+2. awk '/f23/' last.fake > lastf23.fake
+3. wc -l lastf23.fake
+
+Output of the Commands:
+0. What the "last" command does:
+   It lists the logins on the system and prints info about connect times of users from most recent to least recent.
+   Output (first 10 lines):
+   eschjere pts/127                       Thu Oct 26 21:23   still logged in
+   samuelf2 pts/100      172.29.97.20     Thu Oct 26 21:22   still logged in
+   gabrielf pts/44       172.29.97.18     Thu Oct 26 21:19   still logged in
+   eschjere pts/42       172.29.97.15     Thu Oct 26 21:16   still logged in
+   peter23f pts/41       172.29.97.3      Thu Oct 26 20:59   still logged in
+   rahulf23 pts/31       172.29.97.17     Thu Oct 26 20:53   still logged in
+   root     pts/41       172.29.97.16     Thu Oct 26 20:26 - 20:44  (00:17)
+   sharmaak pts/148      172.29.97.13     Thu Oct 26 20:07   still logged in
+   samuelf2 pts/147      172.29.97.20     Thu Oct 26 20:06   still logged in
+   maximf23 pts/146      172.29.97.8      Thu Oct 26 20:06   still logged in
+
+1. Total number of lines in last.fake before filtering:
+   2162
+2. Command to fileter "f23" and redirect those lines to "lastf23.fake":
+   awk '/f23/' last.fake > lastf23.fake
+3. The number of lines in lastf23.fake after filering everything that does not have "f23":
+   239
+
+
+Task 2:
+Command(s) used to solve: 
+grep "Sun" downloadedFiles/lastf23.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }' >> Assignment3/Assignment3.txt
+
+Output of the Command:
+   The list of people who worked on Sunday are:
+   jewonf23
+   saniaf23
+   tienf23
+   Kudos to these people for putting in the work
+
+
+Task 3:
+Command(s) used to solve: 
+awk '$7 >= "23:00" || $7 <= "04:00" { print $1 }' downloadedfiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Night Owls List:" } { print $1 } END { print "Night Owls are dope. Please ensure you get enough sleep though." }' >> Assignment3/assignment3.txt
+
+Output of the Command:
+   Night Owls List:
+   aaronf23
+   anasf23
+   divijf23
+   hamzaf23
+   hof23
+   jamesf23
+   junf23
+   kobef23
+   maximf23
+   rahulf23
+   rikkif23
+   saniaf23
+   thif23
+   tienf23
+   Night Owls are dope. Please ensure you get enough sleep though.
+
+
+Task 4:
+Command(s) used to solve: 
+awk '$7 >= "05:00" && $7 <= "09:00" { print $1 }' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Early Birds List:" } { print } END { print "Early Birds are dope. Please ensure you get enough sleep though." }' >> Assignment3/Assignment3.txt 
+
+Output of the Command:
+   Early Birds List:
+   hamzaf23
+   hof23
+   saniaf23
+   thif23
+   tienf23
+   Early Birds are dope. Please ensure you get enough sleep though.
+
+
+Task 5:
+Command(s) used to solve: 
+awk '/^t/ { print $1 }' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Users having a username that starts with \"t\""} { print }' >> Assignment3/Assignment3.txt 
+
+Output of the Command:
+   Users having a username that starts with "t"
+   thif23
+   tienf23
+
+
+Task 6:
+Command(s) used to solve: 
+awk -F: '/^a/ && $3 % 2 == 0 { print $1 }' downloadedFiles/passwd.fake | sort | awk 'BEGIN { print "Users that have the usernames starting with \"a\" and have UID divisible by 2 from passwd.fake" } { print }' >> Assignment3/Assignment3.txt 
+
+Output of the Command:
+   Users that have the usernames starting with "a" and have UID divisible by 2 from passwd.fake
+   ajay23fa
+   alan23fa
+   amreenf23
+   angie23fa
+   apple23fa
+   areebah23fa
+
+
+Task 7:
+Command(s) used to solve: 
+sed 's/[a-zA-Z0-9[:space:]]//g' downloadedFiles/passwd.fake | uniq -u >> Assignment3/Assignment3.txt
+
+Output of the Command:
+   ::::://://
+   :::::///://
+   :::::///://
+   :::::/://
+   ::::://://
+   :::::/://
+   :::::///://
+   ::::://://
+   -:::::/://
+   -::::-:/://
+   :::::/://
+   :::::///://
+   ::::-:///://
+   :::::/://
+   ::::://://
+   -:::::///-://
+   :::::///://
+   ::::://://

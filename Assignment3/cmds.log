@@ -1,0 +1,43 @@
+Task 0) Download the dataset
+    1  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awkdata/last.fake
+    2  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awkdata/passwd.fake
+    3  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awkdata/ps.fake
+
+    4  mkdir Assignment3/
+    5  touch Assignment3/Assignment3.txt
+
+
+Task 1) Understand what the "last" command does. Move all lines that contain 'f23' to a new file called lastf23.fake.
+   Get the number of lines in last.fake before filtering, move the lines to lastf23.fake, and get the number of lines in lastf23.fake 
+   after filtering everything that does not have 'f23'
+    6  last
+    7  wc -l last.fake
+    8  awk '/f23/' last.fake > lastf23.fake
+    9  wc -l lastf23.fake
+
+
+Task 2) Find all usernames who logged in on Sunday from the lastf23.fake file
+   10  grep "Sun" downloadedFiles/lastf23.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }' >> Assignment3/Assignment3.txt
+
+
+Task 3) Find all usernames who logged in between 11PM and 4AM (inclusive)
+   11  awk '$7 >= "23:00" || $7 <= "04:00" { print $1 }' downloadedfiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Night Owls List:" } { print $1 } END { print "Night Owls are dope. Please ensure you get enough sleep though." }' >> Assignment3/assignment3.txt
+
+
+Task 4) Find all usernames who logged in between 5AM and 9AM (inclusive)
+   12  awk '$7 >= "05:00" && $7 <= "09:00" { print $1 }' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Early Birds List:" } { print } END { print "Early Birds are dope. Please ensure you get enough sleep though." }' >> Assignment3/Assignment3.txt
+
+
+Task 5) Display all users that have a username that starts with "t" from the lastf23.fake file
+   13  awk '/^t/ { print $1 }' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Users having a username that starts with \"t\""} { print }' >> Assignment3/Assignment3.txt
+
+
+Task 6) Use awk on the passwd.fake file to find all users that have usernames with "a" and have UID divisible by 2
+   14  awk -F: '/^a/ && $3 % 2 == 0 { print $1 }' downloadedFiles/passwd.fake | sort | awk 'BEGIN { print "Users that have the usernames starting with \"a\" and have UID divisible by 2 from passwd.fake" } { print }' >> Assignment3/Assignment3.txt
+
+
+Task 7) User sed on passwd.fake to display all the distinct lines left in passwd.fake after deleting all letters, digits, and spaces
+   15  sed 's/[a-zA-Z0-9[:space:]]//g' downloadedFiles/passwd.fake | uniq -u >> Assignment3/Assignment3.txt
+
+   16  cd Assignment3/
+   17  history > cmds.log
