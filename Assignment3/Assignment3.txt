@@ -42,8 +42,8 @@ Output of the Command:
 
 Task 3:
 Command(s) used to solve: 
-awk '$7 >= "23:00" || $7 <= "04:00" { print $1 }' downloadedfiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Night Owls List:" } { print $1 } END { print "Night Owls are dope. Please ensure you get enough sleep though." }' >> Assignment3/assignment3.txt
-
+awk '{if ($3 ~ 172) { if (($7 >= "23:00") || ($7 <= "04:00")) { print $1 }} else { if (($6 >= "23:00") || ($6 <= "04:00")) { print $1 }}}' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Night Owls List:" } { print } END { print "Night Owls are dope. Please ensure you get enough sleep though." }' >> Assignment3/Assignment3.txt
+ 
 Output of the Command:
    Night Owls List:
    aaronf23
@@ -55,8 +55,6 @@ Output of the Command:
    junf23
    kobef23
    maximf23
-   rahulf23
-   rikkif23
    saniaf23
    thif23
    tienf23
@@ -65,7 +63,7 @@ Output of the Command:
 
 Task 4:
 Command(s) used to solve: 
-awk '$7 >= "05:00" && $7 <= "09:00" { print $1 }' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Early Birds List:" } { print } END { print "Early Birds are dope. Please ensure you get enough sleep though." }' >> Assignment3/Assignment3.txt 
+awk '{ if ($3 ~ 172) { if (($7 >= "05:00") && ($7 <= "09:00")) { print $1 }} else { if (($6 >= "05:00") && ($6 <= "09:00")) { print $1 }}}' downloadedFiles/lastf23.fake | sort | uniq | awk 'BEGIN { print "Early Birds List:" } { print } END { print "Early Birds are dope. Please ensure you get enough sleep though." }' >> Assignment3/Assignment3.txt 
 
 Output of the Command:
    Early Birds List:
@@ -99,6 +97,7 @@ Output of the Command:
    angie23fa
    apple23fa
    areebah23fa
+
 
 
 Task 7:
