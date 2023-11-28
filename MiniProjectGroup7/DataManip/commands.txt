@@ -8,10 +8,14 @@ sed -i 's/(Glassdoor est\.)//g' JobTitleAndSalaryEstimate.csv
 wc -l JobTitleAndSalaryEstimate.csv
  > 3892 //some entries did not hav a job title or salary estime so they were excluded from the total count of entries (3909)
 
-4. Find the minimum Salary Estimate
+4. Command to find the minimum Salary Estimate
 cut -d '$' -f 2 -s JobTitleAndSalaryEstimate.csv | sort | cut -d 'K' -f 1 | sort -g | head -1 > MinSalary.txt
  > $12K
 
-5. Find the maximum Salary Estimate
+5. Command to find the maximum Salary Estimate
 cut -d '$' -f 3 -s JobTitleAndSalaryEstimate.csv | sort | cut -d 'K' -f 1 | sort -gr | head -1 > MaxSalary.txt
  > $254K
+
+6. Command to add a count for each index starting from 0
+awk '{print count++ "," $0}' JobTitleAndSalaryEstimate.csv > temp.csv
+mv temp.csv JobTitleAndSalaryEstimate.csv
