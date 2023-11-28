@@ -2,12 +2,11 @@
 awk -F ',' '/\$.{0,3}K/{if($4~/\$/){print $3 ",   " $4} else{print $3 ", " $4 ",   " $5}}' DataScientist.csv > ~/CapProjTemp/JobTitleAndSalaryEstimate.txt
 
 2. Command used to remove "(Glassdoor est.)" from each line
-sed -i 's/(Glassdoor est\.)//g' ~/CapProjTemp/JobTitleAndSalaryEstimate.txt
+sed -i 's/(Glassdoor est\.)//g' JobTitleAndSalaryEstimate.csv
 
 3. Command used to find the number of entries
 wc -l ~/CapProjTemp/JobTitleAndSalaryEstimate
  > 3892 //some entries did not hav a job title or salary estime so they were excluded from the total count of entries (3909)
-
 
 4. Find the minimum Salary Estimate
 cut -d '$' -f 2 -s JobTitleAndSalaryEstimate.txt | sort | cut -d 'K' -f 1 | sort -g | head -1 > ~/CapProjTemp/MinSalary.txt
