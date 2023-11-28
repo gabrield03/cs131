@@ -1,17 +1,17 @@
-1. Command used to filter by the job title and salary range:
-awk -F ',' '/\$.{0,3}K/{if($4~/\$/){print $3 ",   " $4} else{print $3 ", " $4 ",   " $5}}' DataScientist.csv > ~/CapProjTemp/JobTitleAndSalaryEstimate.txt
+1. Command used to filter extract the job title and salary estimate:
+awk -F, '{for(i=1;i<=NF;i++){if($i~/\$[0-9]+K/){for(j=3;j<=i;j++){printf "%s%s", ($j~/\$[0-9]+K/ && j!=3 ? ",":""), $j}print ""}}}' DataScientist.csv > JobTitleAndSalaryEstimate.csv
 
 2. Command used to remove "(Glassdoor est.)" from each line
 sed -i 's/(Glassdoor est\.)//g' JobTitleAndSalaryEstimate.csv
 
 3. Command used to find the number of entries
-wc -l ~/CapProjTemp/JobTitleAndSalaryEstimate
+wc -l JobTitleAndSalaryEstimate.csv
  > 3892 //some entries did not hav a job title or salary estime so they were excluded from the total count of entries (3909)
 
 4. Find the minimum Salary Estimate
-cut -d '$' -f 2 -s JobTitleAndSalaryEstimate.txt | sort | cut -d 'K' -f 1 | sort -g | head -1 > ~/CapProjTemp/MinSalary.txt
+cut -d '$' -f 2 -s JobTitleAndSalaryEstimate.csv | sort | cut -d 'K' -f 1 | sort -g | head -1 > MinSalary.txt
  > $12K
 
 5. Find the maximum Salary Estimate
-cut -d '$' -f 3 -s JobTitleAndSalaryEstimate.txt | sort | cut -d 'K' -f 1 | sort -gr | head -1 > ~/CapProjTemp/MaxSalary.txt
+cut -d '$' -f 3 -s JobTitleAndSalaryEstimate.csv | sort | cut -d 'K' -f 1 | sort -gr | head -1 > MaxSalary.txt
  > $254K
