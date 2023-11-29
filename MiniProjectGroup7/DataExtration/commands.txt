@@ -19,3 +19,6 @@ cut -d '$' -f 3 -s JobTitleAndSalaryEstimate.csv | sort | cut -d 'K' -f 1 | sort
 6. Command to add a count for each index starting from 0
 awk '{print count++ "," $0}' JobTitleAndSalaryEstimate.csv > temp.csv
 mv temp.csv JobTitleAndSalaryEstimate.csv
+
+7. Command to create a csv file with the job title, min salary estimate, and max salary estimate
+awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $3); sub("-", ",", $3)}1' JobTitleAndSalaryEstimate.csv > update.csv
