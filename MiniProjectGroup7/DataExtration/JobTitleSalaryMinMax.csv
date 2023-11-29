@@ -1,4 +1,4 @@
-Job Title, Min Salary Estimate (in thousands of $), Max Salary Estimate (in thousands of $)
+Job Title, Salary Estimate
 0,Senior Data Scientist,111,181 
 1,"Data Scientist Product Analytics",111,181 
 2,Data Science Manager,111,181 
@@ -1621,7 +1621,7 @@ Job Title, Min Salary Estimate (in thousands of $), Max Salary Estimate (in thou
 1619,Quantum Data Scientist (Industrial-Process sector),50,87 
 1620,Natural Catastrophe Research Scientist,50,87 
 1621,Global Reporting and Analytics Consultant,50,87 
-1622,Data Scientist / Sports Scientist,50,87
+1622,Data Scientist / Sports Scientist,50,87 
 1623,Data Scientist / Sports Scientist,50,87
 1624,Data Analyst,50,87 
 1625,Data Scientist; Acurian (A PPD Company),50,87 
@@ -1803,7 +1803,7 @@ Job Title, Min Salary Estimate (in thousands of $), Max Salary Estimate (in thou
 1801,"Biopharmaceutical Drug Product Principal Scientist/ Investigator",45,106 
 1802,Data Analyst- Remote,45,106 
 1803,"Senior Scientist Biology",45,106 
-1804,Data Scientist/Gaming,45,106
+1804,Data Scientist/Gaming,45,106 
 1805,Data Scientist/Gaming,45,106
 1806,Associate Product Development Scientist,45,106 
 1807,Lead Data Engineer,45,106 
