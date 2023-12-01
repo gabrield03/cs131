@@ -22,3 +22,13 @@ mv temp.csv JobTitleAndSalaryEstimate.csv
 
 7. Command to create a csv file with the job title, min salary estimate, and max salary estimate
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $3); sub("-", ",", $3)}1' JobTitleAndSalaryEstimate.csv > update.csv
+
+
+
+**new
+8. Command to extract salary estimates by company size
+awk -F ',' -f salary_by_size.awk DataScientist.csv
+**see salary_by_size.awk file to view full awk command**
+
+9. Command to create a csv file with the company size, min salary estimate, and max salary estimate
+awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryBySize.csv > SalaryBySizeSplit.csv
