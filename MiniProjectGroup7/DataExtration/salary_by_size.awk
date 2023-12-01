@@ -41,7 +41,7 @@
             salary_estimate = ""
         }
     }
-    else if ($0 ~ /10000+ employees/) {
+    else if ($0 ~ /10000\+ employees/) {
         if (salary_estimate) {
             print "10000+ employees,", salary_estimate > "SalaryBySize.csv"
             salary_estimate = ""

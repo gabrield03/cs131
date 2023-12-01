@@ -32,3 +32,9 @@ awk -F ',' -f salary_by_size.awk DataScientist.csv
 
 9. Command to create a csv file with the company size, min salary estimate, and max salary estimate
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryBySize.csv > SalaryBySizeSplit.csv
+
+10. Command to verify the number of lines in the salary by size files
+grep -w "10000+" SalaryBySizeSplit.csv | wc -l
+ * compare result to*
+grep -w "10000+" DataScientist.csv | wc -l
+ * repeat for the other company size values (1 to 50, 51 to 200, etc.)*
