@@ -26,11 +26,12 @@ awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $3); sub("-", ",", $3)}1' JobTitleAndS
 
 
 **new
+Salary by Company Size
 8. Command to extract salary estimates by company size
 awk -F ',' -f salary_by_size.awk DataScientist.csv
 **see salary_by_size.awk file to view full awk command**
 
-9. Command to create a csv file with the company size, min salary estimate, and max salary estimate
+9. Command to create a csv file with the company size, min salary estimate, and max salary estimate (split the salary range)
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryBySize.csv > SalaryBySizeSplit.csv
 
 10. Command to verify the number of lines in the salary by size files
@@ -38,3 +39,14 @@ grep -w "10000+" SalaryBySizeSplit.csv | wc -l
  * compare result to*
 grep -w "10000+" DataScientist.csv | wc -l
  * repeat for the other company size values (1 to 50, 51 to 200, etc.)*
+
+
+Salary by Experience Level
+11. Command to extract salary estimates by experience level
+awk -F ',' '{for (i = 1; i <= NF; i++) if ((tolower($i) ~ /junior|jr|senior|sr|manager|director|vice president|vp/) && match($(i+1), /\$[0-9]+K-\$[0-9]+K/)) print $i "," $(i+1) >> "SalaryByExperience.csv"}' DataScientist.csv
+
+12. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
+sed -i 's/(Glassdoor est\.)//g; s/(Employer est\.)//g' SalaryByExperience.csv 
+
+13. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
+awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryByExperience.csv > SalaryByExperienceSplit.csv
