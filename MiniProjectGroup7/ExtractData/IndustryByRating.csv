@@ -64,7 +64,7 @@ Information Technology,4.5
 Finance,3.9
 Information Technology,3.3
 Information Technology,3.8
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Business Services,3.3
 Health Care,4.1
 Information Technology,2.8
@@ -263,7 +263,7 @@ Information Technology,4.2
 Information Technology,4.7
 Information Technology,3.7
 Information Technology,3.9
-Oil, Gas, Energy & Utilities,2.8
+Oil - Gas - Energy & Utilities,2.8
 Health Care,3.3
 Insurance,3.1
 Information Technology,2.5
@@ -558,7 +558,7 @@ Insurance,3.1
 Information Technology,3.4
 Business Services,3.9
 Health Care,4.1
-Oil, Gas, Energy & Utilities,3.9
+Oil - Gas - Energy & Utilities,3.9
 Biotech & Pharmaceuticals,2.8
 Business Services,4.5
 Business Services,3.8
@@ -741,16 +741,16 @@ Finance,2.7
 Information Technology,2.2
 Finance,3.7
 Finance,3.7
-Oil, Gas, Energy & Utilities,3.5
+Oil - Gas - Energy & Utilities,3.5
 Business Services,3.3
 Information Technology,4.9
 Information Technology,3.9
-Oil, Gas, Energy & Utilities,2.2
+Oil - Gas - Energy & Utilities,2.2
 Information Technology,3.9
 Information Technology,4.2
-Oil, Gas, Energy & Utilities,3.4
-Oil, Gas, Energy & Utilities,3.4
-Oil, Gas, Energy & Utilities,3.7
+Oil - Gas - Energy & Utilities,3.4
+Oil - Gas - Energy & Utilities,3.4
+Oil - Gas - Energy & Utilities,3.7
 Government,3.8
 Business Services,3.3
 Biotech & Pharmaceuticals,3.2
@@ -761,7 +761,7 @@ Information Technology,4.0
 Business Services,3.2
 Government,3.5
 Information Technology,3.7
-Oil, Gas, Energy & Utilities,3.4
+Oil - Gas - Energy & Utilities,3.4
 Business Services,4.1
 Information Technology,3.3
 Information Technology,3.1
@@ -770,7 +770,7 @@ Information Technology,3.9
 Government,3.6
 Information Technology,3.9
 Biotech & Pharmaceuticals,3.2
-Oil, Gas, Energy & Utilities,3.4
+Oil - Gas - Energy & Utilities,3.4
 Information Technology,3.1
 Finance,3.6
 Business Services,4.8
@@ -794,7 +794,7 @@ Information Technology,2.4
 Business Services,4.0
 Biotech & Pharmaceuticals,3.3
 Health Care,3.2
-Oil, Gas, Energy & Utilities,3.2
+Oil - Gas - Energy & Utilities,3.2
 Information Technology,3.6
 Health Care,2.5
 Health Care,3.2
@@ -809,13 +809,13 @@ Health Care,2.7
 Information Technology,3.0
 Information Technology,4.3
 Information Technology,3.7
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Business Services,4.1
 Business Services,4.5
 Finance,3.9
 Business Services,3.6
 Business Services,3.8
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Health Care,4.1
 Health Care,3.5
 Health Care,3.6
@@ -833,7 +833,7 @@ Information Technology,3.6
 Health Care,4.1
 Business Services,3.8
 Health Care,4.4
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Insurance,3.6
 Information Technology,3.9
 Finance,2.8
@@ -856,7 +856,7 @@ Biotech & Pharmaceuticals,3.3
 Business Services,4.6
 Finance,4.4
 Information Technology,3.1
-Oil, Gas, Energy & Utilities,2.0
+Oil - Gas - Energy & Utilities,2.0
 Health Care,3.6
 Health Care,4.1
 Business Services,4.5
@@ -1382,7 +1382,7 @@ Business Services,3.8
 Business Services,3.4
 Biotech & Pharmaceuticals,3.9
 Biotech & Pharmaceuticals,3.4
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Business Services,3.3
 Finance,3.8
 Business Services,4.4
@@ -1580,7 +1580,7 @@ Biotech & Pharmaceuticals,3.0
 Government,3.5
 Information Technology,4.5
 Information Technology,4.2
-Oil, Gas, Energy & Utilities,2.8
+Oil - Gas - Energy & Utilities,2.8
 Information Technology,4.5
 Biotech & Pharmaceuticals,3.9
 Business Services,3.8
@@ -1595,7 +1595,7 @@ Biotech & Pharmaceuticals,4.2
 Insurance,3.3
 Business Services,3.1
 Information Technology,4.1
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Biotech & Pharmaceuticals,2.8
 Health Care,3.6
 Business Services,4.3
@@ -1641,7 +1641,7 @@ Biotech & Pharmaceuticals,3.5
 Biotech & Pharmaceuticals,4.9
 Information Technology,4.0
 Biotech & Pharmaceuticals,5.0
-Oil, Gas, Energy & Utilities,3.4
+Oil - Gas - Energy & Utilities,3.4
 Information Technology,4.1
 Biotech & Pharmaceuticals,4.0
 Information Technology,3.6
@@ -1689,7 +1689,7 @@ Information Technology,3.8
 Biotech & Pharmaceuticals,3.8
 Information Technology,4.3
 Information Technology,4.6
-Oil, Gas, Energy & Utilities,3.2
+Oil - Gas - Energy & Utilities,3.2
 Business Services,4.9
 Biotech & Pharmaceuticals,4.3
 Insurance,4.3
@@ -1787,7 +1787,7 @@ Business Services,3.4
 Biotech & Pharmaceuticals,2.4
 Biotech & Pharmaceuticals,3.5
 Business Services,2.8
-Oil, Gas, Energy & Utilities,3.4
+Oil - Gas - Energy & Utilities,3.4
 Biotech & Pharmaceuticals,4.1
 Biotech & Pharmaceuticals,4.1
 Insurance,4.2
@@ -1848,7 +1848,7 @@ Insurance,3.5
 Finance,3.9
 Biotech & Pharmaceuticals,3.1
 Business Services,2.8
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Telecommunications,4.1
 Business Services,4.6
 Finance,3.0
@@ -1979,7 +1979,7 @@ Business Services,4.2
 Business Services,4.6
 Business Services,4.0
 Information Technology,3.8
-Oil, Gas, Energy & Utilities,2.8
+Oil - Gas - Energy & Utilities,2.8
 Finance,3.7
 Finance,3.4
 Finance,4.0
@@ -2421,7 +2421,7 @@ Information Technology,4.0
 Business Services,4.4
 Finance,3.9
 Government,3.8
-Oil, Gas, Energy & Utilities,4.2
+Oil - Gas - Energy & Utilities,4.2
 Information Technology,4.1
 Business Services,4.6
 Information Technology,3.8
@@ -2457,7 +2457,7 @@ Information Technology,4.7
 Government,3.9
 Government,3.8
 Finance,3.4
-Oil, Gas, Energy & Utilities,2.6
+Oil - Gas - Energy & Utilities,2.6
 Information Technology,2.9
 Information Technology,4.1
 Business Services,3.5
@@ -2635,7 +2635,7 @@ Insurance,3.3
 Information Technology,3.9
 Government,3.5
 Business Services,3.0
-Oil, Gas, Energy & Utilities,4.3
+Oil - Gas - Energy & Utilities,4.3
 Business Services,4.1
 Insurance,3.3
 Business Services,4.6
@@ -2703,7 +2703,7 @@ Government,3.4
 Government,2.6
 Information Technology,3.7
 Finance,3.0
-Oil, Gas, Energy & Utilities,4.2
+Oil - Gas - Energy & Utilities,4.2
 Information Technology,3.5
 Information Technology,5.0
 Business Services,3.9
@@ -2788,7 +2788,7 @@ Information Technology,4.2
 Business Services,3.1
 Health Care,3.6
 Finance,3.9
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Information Technology,4.8
 Information Technology,4.8
 Finance,3.9
@@ -2806,7 +2806,7 @@ Finance,3.9
 Business Services,4.2
 Business Services,4.2
 Information Technology,3.7
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Information Technology,5.0
 Health Care,3.6
 Information Technology,3.7
@@ -2820,7 +2820,7 @@ Business Services,3.2
 Business Services,4.6
 Business Services,4.5
 Information Technology,3.7
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Health Care,3.6
 Insurance,4.9
 Biotech & Pharmaceuticals,3.3
@@ -2859,10 +2859,10 @@ Business Services,4.2
 Business Services,4.6
 Biotech & Pharmaceuticals,3.3
 Health Care,3.7
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Government,3.9
 Health Care,3.7
-Oil, Gas, Energy & Utilities,3.6
+Oil - Gas - Energy & Utilities,3.6
 Business Services,4.6
 Biotech & Pharmaceuticals,3.3
 Business Services,2.5
