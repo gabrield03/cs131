@@ -50,3 +50,10 @@ sed -i 's/(Glassdoor est\.)//g; s/(Employer est\.)//g' SalaryByExperience.csv
 
 13. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryByExperience.csv > SalaryByExperienceSplit.csv
+
+
+Industry Type by Company Rating
+
+14. Command to extract industry type by company rating
+awk -F "," -f industry_by_rating.awk DataScientist.csv
+* see industry_by_rating.awk for full command *
