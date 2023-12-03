@@ -15,7 +15,7 @@ grep -w "10000+" DataScientist.csv | wc -l
 
 Salary by Experience Level
 4. Command to extract salary estimates by experience level
-awk -F ',' '{for (i = 1; i <= NF; i++) if ((tolower($i) ~ /junior|jr|senior|sr|manager|director|vice president|vp/) && match($(i+1), /\$[0-9]+K-\$[0-9]+K/)) print $i "," $(i+1) >> "SalaryByExperience.csv"}' DataScientist.csv
+awk -F ',' '{for (i = 1; i <= NF; i++) if ((tolower($i) ~ /junior|jr|senior|sr|manager|director/) && match($(i+1), /\$[0-9]+K-\$[0-9]+K/)) print $i "," $(i+1) >> "SalaryByExperience.csv"}' DataScientist.csv
 
 5. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
 sed -i 's/(Glassdoor est\.)//g; s/(Employer est\.)//g' SalaryByExperience.csv 
