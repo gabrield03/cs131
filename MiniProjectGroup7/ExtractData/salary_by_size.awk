@@ -4,7 +4,7 @@
         salary_estimate = substr($0, RSTART, RLENGTH)  # Store matched pattern
     }
 
-    # If "1 to 50 employees" is found, handle the stored pattern
+    # If "1 to 50 employees" is found, print "size,salary"
     if ($0 ~ /1 to 50 employees/) {
         if (salary_estimate) {
             print "1 to 50 employees,", salary_estimate > "SalaryBySize.csv"
