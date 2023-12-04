@@ -1,51 +1,61 @@
-Salary by Company Size
-1. Command to extract salary estimates by company size
-awk -F ',' -f salary_by_size.awk DataScientist.csv
-**see salary_by_size.awk file to view full awk command**
+### Salary by Location ###
+1. Command to extract salary estimates by location
+awk -F ‘,’ -f SalaryByLocation.awk DataScientist.csv
+** see SalaryByLocationn.awk to view full awk command **
 
-2. Command to create a csv file with the company size, min salary estimate, and max salary estimate (split the salary range)
+2. Command to create a csv file with each location's range of salaries
+awk -f MinMaxSalaryByLocation.awk SalaryByLocation.csv | sort > MinMaxSalaryByLocation.csv
+** see MinMaxSalaryByLocation.awk to view full awk command **
+
+
+### Salary by Company Size ###
+3. Command to extract salary estimates by company size
+awk -F ',' -f salary_by_size.awk DataScientist.csv
+** see salary_by_size.awk file to view full awk command **
+
+4. Command to create a csv file with the company size, min salary estimate, and max salary estimate (split the salary range)
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryBySize.csv > SalaryBySizeSplit.csv
 
-3. Command to verify the number of lines in the salary by size files
+5. Command to verify the number of lines in the salary by size files
 grep -w "10000+" SalaryBySizeSplit.csv | wc -l
  * compare result to*
 grep -w "10000+" DataScientist.csv | wc -l
  * repeat for the other company size values (1 to 50, 51 to 200, etc.)*
 
-4. Command to add the headers to the csv file
+6. Command to add the headers to the csv file
 vi SalaryBySizeSplit.csv
 >> In vi, add the headers: Company Size,Min. Salary Estimate (in thousands of $),Max. Salary Estimate (in thousands of $)
 
 
 ### Salary by Experience Level ###
-5. Command to extract salary estimates by experience level
+7. Command to extract salary estimates by experience level
 awk -F ',' '{for (i = 1; i <= NF; i++) if ((tolower($i) ~ /junior|jr|senior|sr|manager|director/) && match($(i+1), /\$[0-9]+K-\$[0-9]+K/)) print $i "," $(i+1) >> "SalaryByExperience.csv"}' DataScientist.csv
 
-6. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
+8. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
 sed -i 's/(Glassdoor est\.)//g; s/(Employer est\.)//g' SalaryByExperience.csv 
 
-7. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
+9. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryByExperience.csv > SalaryByExperienceSplit.csv
 
-8. Command to verify the number of records in the csv file
+10. Command to verify the number of records in the csv file
 wc -l SalaryByExperienceSplit.csv
 
-9. Command to add the header to the csv file
+11. Command to add the header to the csv file
 vi SalaryByExperienceSplit.csv
 >> In vi, add the headers: Experience Level,Min. Salary Estimate (in thousands of $),Max. Salary Estimate (in thousands of $)
 
 
 ### Industry Type by Company Rating ###
-10. Command to extract industry type by company rating
+12. Command to extract industry type by company rating
 awk -F "," -f industry_by_rating.awk DataScientist.csv
 * see industry_by_rating.awk for full command *
 
-11. Command to change "Oil, Gas, Energy & Utilities" to "Oil - Gas - Energy & Utilities" (to be easier to work with in a CSV file)
+13. Command to change "Oil, Gas, Energy & Utilities" to "Oil - Gas - Energy & Utilities" (to be easier to work with in a CSV file)
 sed -i 's/Oil, Gas, Energy \& Utilities/Oil - Gas - Energy \& Utilities/g' IndustryByRating.csv
 
-12. Command to verify the number of records in the csv file
+14. Command to verify the number of records in the csv file
 wc -l IndustryByRating.csv
 
-13. Command to add the header to the csv file
+15. Command to add the header to the csv file
 vi IndustryByRating.csv
 >> In vi, add the headers: Industry Type,Company Rating 
