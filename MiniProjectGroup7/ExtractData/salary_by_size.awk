@@ -1,10 +1,10 @@
 {
     # Check for the "$XXXK-$XXXK" pattern in each line
     if (match($0, /\$[0-9]+K-\$[0-9]+K/)) {
-        salary_estimate = substr($0, RSTART, RLENGTH)  # Store matched pattern
+        salary_estimate = substr($0, RSTART, RLENGTH)
     }
 
-    # If "1 to 50 employees" is found, print "size,salary"
+    # If "1 to 50 employees" is found, print size,salary
     if ($0 ~ /1 to 50 employees/) {
         if (salary_estimate) {
             print "1 to 50 employees,", salary_estimate > "SalaryBySize.csv"
